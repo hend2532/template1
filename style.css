@@ -6,7 +6,7 @@
 }
 body{
     /* filter: blur(1px); */
-    background-image: url("./image/فلسطين5.jpg");
+    /* background-image: url("./image/فلسطين5.jpg"); */
     background-size: 100%;
     /* background-attachment: fixed; */
     background-repeat: repeat;
@@ -120,6 +120,8 @@ p{
 } */
  
 footer {
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
     margin-top: 20px;
     background: black;
@@ -186,4 +188,70 @@ footer a:hover{
 .parent a img{
     width: 250px;
     height: 200px;
+}
+input{
+    display: block;
+    padding: 5px;
+    color: green;
+    width: 200px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 1px solid green;
+    background: transparent;
+}
+.pay{
+    background-image: url("./image/فلسطين5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+input:hover{
+    outline: none;
+}
+label{
+    color: red;
+    padding: 5px;
+    margin: 5px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+    margin:30px  auto;
+    padding: 25px;
+    transform: translate(-0%,20%);
+    box-shadow: 0px 0px 5px 5px #3b83371c;
+    background: rgba(255, 255, 255, 0.532);
+    backdrop-filter: blur(15px);;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    margin: 5px;
+    transition:.5s;
+}
+button:hover{
+    background: red;
+}
+#choose{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    display: none;
+}
+#form-cash,#form-visa{
+    display: none;
 }
