@@ -1,9 +1,9 @@
 let sliderImages=Array.from(document.querySelectorAll(".slider-container .slide"));
 let sliderImage=Array.from(document.querySelectorAll(".slider-container .slide img"));
 let slidesCount=sliderImages.length;
-// let slideNumberElement=document.getElementById('slide-number');
+let slideNumberElement=document.getElementById('slide-number');
 
-let currentSlide=1;
+let currentSlide=3;
 let nextButton=document.getElementById('next');
 let prevButton=document.getElementById('prev');
 
@@ -36,7 +36,7 @@ for(let i=0;i<paginationBullets.length;i++){
 theChecker();
 
 function theChecker(){
-    // slideNumberElement.textContent=currentSlide;
+    slideNumberElement.textContent=currentSlide;
     removeAllActive();  
     sliderImages[currentSlide-1].classList.add("active");
     sliderImage[currentSlide-1].classList.add("active");
